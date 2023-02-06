@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
+
+// import components
+import Hero from "./components/Hero";
+import Features from "./components/Features";
+import NewItems from "./components/NewItems";
+import FeaturesSecond from "./components/FeaturesSecond"
 
 const App = () => {
   return (
-    <div className='bg-black text-white w-full h-screen flex justify-center items-center'>App</div>
-  )
-}
+    <div className="w-full max-w-[1440px] mx-auto bg-white">
+      <Hero />
+      <Features />
+      <NewItems />
+      <FeaturesSecond />
+    </div>
+  );
+};
 
-export default App
+export default App;
